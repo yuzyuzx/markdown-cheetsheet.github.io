@@ -33,6 +33,7 @@
 ## Block Elements
 ### Headers
 #### Atx-style
+
 ```md
 # This is an H1
 ## This is an H2
@@ -50,6 +51,7 @@
 ###### This is an H6<!-- omit from toc -->
 
 #### Setext-style
+
 ```md
 This is an H1
 =
@@ -57,6 +59,7 @@ This is an H1
 This is an H2
 -
 ```
+
 <!-- omit from toc -->
 This is an H1
 =
@@ -66,17 +69,21 @@ This is an H2
 -
 
 ### Blockquotes
+
 ```md
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 ```
+
 > This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
 #### blockquote-in-a-blockquote
+
 ```md
 > This is the first level of quoting.
 > > This is nested blockquote.
 > Back to the first level.
 ```
+
 > This is the first level of quoting.
 >
 > > This is nested blockquote.
@@ -85,6 +92,7 @@ This is an H2
 
 ### Lists
 #### 順序なしリスト
+
 ```md
 * red
 * green
@@ -116,6 +124,7 @@ This is an H2
 - blue
 
 #### 順序付きリスト
+
 ```md
 1. red
 2. green
@@ -128,13 +137,17 @@ This is an H2
 
 ### Code Blocks
 #### Inline code
+
 ```md
 Inline `code` has `back-ticks around` it.
 ```
+
 Inline `code` has `back-ticks around` it.
 
 #### Blocks code
+
 - ４つのスペースか１つのタブインデントを入れる
+
 ```md
 This is a normal paragraph:
 
@@ -142,6 +155,7 @@ This is a normal paragraph:
       code
     end code
 ```
+
 This is a normal paragraph:
 
     start code
@@ -149,21 +163,27 @@ This is a normal paragraph:
     end code
 
 ### Code and Syntax Highlighting
+
 - ３つのバックティック
 - コードブロックを入れ子にするにはインデントを増やす
+
 ```md
     ```javascript
     var s = "JavaScript syntax highlighting";
     alert(s);
     ```
+
 ```
+
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
+
 - [ハイライトのデモ](http://softwaremaniacs.org/media/soft/highlight/test.html)
 
 ### Tables
+
 ```md
 | Tables          |  products  | price |
 | --------------- | :--------: | ----: |
@@ -179,24 +199,28 @@ alert(s);
 | col 3 is Right  | smartphone |   $12 |
 
 - インラインマークダウンを使用することができる
+
 ```md
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 ```
+
 Markdown | Less | Pretty
 --- | --- | ---
 *Still* | `renders` | **nicely**
 1 | 2 | 3
 
 ### Horizontal Rules
+
 ```md
 ***
 * * *
 ---
 - - - 
 ```
+
 ***
 * * *
 ---
@@ -205,34 +229,42 @@ Markdown | Less | Pretty
 ## Span Elements
 ### Links
 #### インラインスタイル
+
 ```md
 [This link](https://example.net/) has no title attribute.
 ```
+
 [This link](https://example.net/) has no title attribute.
 
 #### タイトル属性付与
+
 ```md
 This is [an example](https://example.com/ "Title") inline link.
 ```
+
 This is [an example](https://example.com/ "Title") inline link.
 
 #### 参照スタイル
+
 ```md
 This is [an example][id] reference-style link.
 
 [id]: https://example.com/  "Optional Title Here"
 ```
+
 This is [an example][id] reference-style link.
 
 [id]: https://example.com/  "Optional Title Here"
 
 #### title属性を次の行に記述
+
 ```md
 This is [an example][id2] reference-style link.
 
 [id2]: https://example.com/longish/path/to/resource/here
     "Optional Title Here"
 ```
+
 This is [an example][id2] reference-style link.
 
 [id2]: https://example.com/longish/path/to/resource/here
@@ -247,6 +279,7 @@ This is [an example][id2] reference-style link.
 [2]: https://github.co.jp/   "Link to Github"
 [3]: https://cloudflare.com/ "Link to Cloudflare"
 ```
+
 [Link To Google][1]  
 [Link To Github][2]  
 [Link To Cloudflare][3]  
@@ -257,39 +290,48 @@ This is [an example][id2] reference-style link.
 
 ### Emphasis
 #### em
+
 ```md
 *single asterisks*
 
 _single underscores_
 ```
+
 *single asterisks*
 
 _single underscores_
 
 #### strong
+
 ```md
 **double asterisks**
 
 __double underscores__
 ```
+
 **double asterisks**
 
 __double underscores__
 
 ### Images
 #### インラインスタイル
+
 ```md
 ![Alt text](/path/to/img.jpg)
 ```
+
 ![Alt text](./image/image-1.jpg)
 
 #### title属性付与
+
 ```md
 ![Alt text](/path/to/img.jpg "Optional title")
 ```
+
 ![Alt text](./image/image-1.jpg "Optional title")
 
 #### 参照スタイル
+
 ```md
 ![Alt text][image-id-1]
 
@@ -301,7 +343,9 @@ __double underscores__
 [image-id-2]: ./image/image-1.jpg
 
 #### サイズ指定
+
 ```md
 <img width=200 src="/path/to/img.jpg">
 ```
+
 <img width=200 src="./image/image-1.jpg">
