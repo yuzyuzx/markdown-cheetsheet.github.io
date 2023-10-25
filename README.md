@@ -90,22 +90,27 @@ This is an H2
 * green
 * blue
 ```
+
 * red
 * green
 * blue
+
 ```md
 + red
 + green
 + blue
 ```
+
 + red
 + green
 + blue
+
 ```md
 - red
 - green
 - blue
 ```
+
 - red
 - green
 - blue
@@ -116,6 +121,7 @@ This is an H2
 2. green
 3. blue
 ```
+
 1. red
 2. green
 3. blue
